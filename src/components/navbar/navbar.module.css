@@ -1,11 +1,12 @@
 .container{
-    padding:1rem;
-    background-color: var(-textColor);
+    padding: 1rem;
+    background-color: var(--textColor);
     color: var(--bgColor);
     display: flex;
     justify-content: space-between;
+    height: 80px;
 }
-.logo{
-    font-size:2rem;
 
+.logo{
+    font-size: 2rem;
 }

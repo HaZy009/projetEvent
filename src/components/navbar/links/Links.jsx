@@ -1,42 +1,73 @@
-'use client'
-import React from 'react'
-import Styles from './links.module.css'
-import Link from 'next/link'
-import { usePathname } from 'next/navigation'
+'use client';
+import React, { Fragment, useState } from 'react'
+import Styles from './links.module.css';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 const tab = [
     {
-        title:'Home', 
-        path:'/'
+        title :'Home',
+        path: '/',
     },
     {
-        title:'Evenement 1', 
-        path:'/event1'
+        title :'Evenement 1',
+        path: '/event1',
     },
     {
-        title:'Evenement 2', 
-        path:'/event2'
+        title :'Evenement 2',
+        path: '/event2',
     },
     {
-        title:'Contact', 
-        path:'/contact'
+        title :'Contact',
+        path: '/contact',
     }
-]
+];
+
+
+
 
 const Links = () => {
-    const pathName = usePathname();
-    // (a>b) ? a : b si a plus grand b alor a sinon b
-    // (a>b) && a si plus grand b affiche a sinon rien
+  const pathname = usePathname();
+  const [open, setOpen] = useState(false);
+
+  const onClickHander = () => {
+    setOpen(!open);
+  }
+
   return (
-    <div className={Styles.container}>
-        {
-            tab.map( (element, index) => (
-                <Link 
-                className={pathName === element.path ? `${Styles.active}`: ''}
-                key={index} href={element.path}>{element.title}</Link>
-            ))
-        }
+   <>
+{/******div general */}
+   <div >
+    {/******div containe pour les liens descktop */}
+     <div className={Styles.containerLinks}>
+      {
+        tab.map((item, index) => (
+        <Link 
+        className={ pathname === item.path ? `${Styles.active}` : ''}
+        key={index} href={item.path}>{item.title}</Link>
+        ))
+      }
     </div>
+
+      {/******div containe pour les liens mobile */}
+      <button style={{backgroundColor:'fuchsia'}} onClick={onClickHander} className={Styles.menuMobile}>Menu mobile</button>
+      {
+        open && (
+          <div className={Styles.containerMobileLinks}>
+          {
+            tab.map((item, index) => (
+            <Link 
+            className={ pathname === item.path ? `${Styles.active}` : ''}
+            key={index} href={item.path}>{item.title}</Link>
+            ))
+          }
+        </div>
+        )
+      }
+     
+    
+   </div> 
+   </>
   )
 }
 

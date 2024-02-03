@@ -1,14 +1,53 @@
 @tailwind base;
-@tailwind components;
 @tailwind utilities;
 
-:root{
-  --bgColor:white;
-  --textColor:black;
-  --autre: gray;
+:root {
+	--bgColor: white;
+	--textColor: black;
+	--autre: rgb(209, 208, 208);
+	--button: #7a5ef6;
 }
 
 body {
-  color: var(--textColor);
-  background-color: var(--bgColor);
+	color: var(--textColor);
+	background-color: var(--bgColor);
 }
+
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100vh;
+	width: 100vw;
+	margin: 0;
+}
+
+/*
+@media(max-width: 1366px){
+  .container{
+    width: 1280px;
+  }
+}
+@media(max-width: 1280px){
+  .container{
+    width: 1034px;
+  }
+  
+}
+@media(max-width: 1024px){
+  .container{
+    width: 768px;
+  }
+}
+@media(max-width: 768px){
+  .container{
+    width: 640px;
+  }
+}
+
+@media(max-width: 768px){
+  .container{
+    width: 640px;
+  }
+}
+*/

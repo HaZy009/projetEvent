@@ -1,14 +1,14 @@
-import React from 'react'
-import Links from './links/Links'
-import Styles from './navbar.module.css'
+'use client';
+import Links from "./links/Links";
+import Styles from "./navbar.module.css";
 
-const Navbar = () => {
-  return (
-    <div className={Styles.container}>
-        <div className={Styles.logo}>LOGO</div>
-        <Links/>
-    </div>
-  )
+const Navbar =() => {
+
+    return(
+        <div className={Styles.container}>
+         <div className={Styles.logo}>LOGO</div>   
+        <Links />
+        </div>
+    )
 }
-
-export default Navbar
+export default Navbar;

@@ -1,9 +1,12 @@
-import React from 'react'
+import TemplatePage from "@/components/templatePage/TemplatePage";
+import React from "react";
 
 const Event2 = () => {
-  return (
-    <div>Page Evenement 2</div>
-  )
-}
+	return (
+		<>
+			<TemplatePage title="Page evenement 2" />
+		</>
+	);
+};
 
-export default Event2
+export default Event2;
