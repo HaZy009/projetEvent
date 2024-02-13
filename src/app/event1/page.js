@@ -1,28 +1,36 @@
-import TemplatePage from "@/components/templatePage/TemplatePage";
 import React from "react";
+import TemplatePageEvent from "@/components/TemplatePageEvent/TemplatePageEvent";
 
-const tab = [
-	{
-		title: "hksdfsdjklfhasjklfh",
-		description: "sdfghsdf;gjklhsdfgjkhasdkfgj",
-		image: "sdfgsdfg  ",
-	},
-];
-
-const description =
-	"Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, suscipit delectus? Quis ex repudiandae corrupti hic magnam facere non deserunt fuga maxime? Quis, eligendi aut? Asperiores distinctio accusantium quod? Aperiam!";
-
-const Event1 = () => {
-	return (
-		<>
-			<TemplatePage
-				title="Page evenement 1"
-				description={description}
-				src="/artist.jpg"
-				textBouton1="Voir plus"
-			/>
-		</>
-	);
-};
-
-export default Event1;
+const HomePage = () => {
+	const eventInfo = {
+	  title: 'Rocktitude',
+	  text: 'Rejoignez l’aventure Rocktitude, le festival où le rock et le métal fusionnent pour donner vie à une expérience sonore sans précédent. Ne manquez pas cette occasion unique le 03 et 04 Mai 2025 de midi à minuit, pour des moments de pur frisson musical qui marqueront les esprits.',
+	  images: [
+		{ src: '/rockCard.jpg', alt: 'Festival At Night' },
+		{ src: '/rock-concert.jpg', alt: 'Concert Crowd' },
+		{ src: '/rock-festival.jpg', alt: 'Stage Performance' },
+	  ],
+	  bandTitle: 'Band',
+	  bandList: [
+		'Thunderstrike',
+		'Iron Vortex',
+		'Velvet Rebellion',
+		'Spectral Fire',
+		'The Crimson Shadows',
+		'Eclipse Eternal',
+		'Neon Knights',
+		'Blackened Souls',
+		'Rift Riders',
+		'Serpent\'s Tongue',
+		'Wraith Dominion',
+		'Celestial Ruin',
+		'Phantom\'s Cry',
+		'Abyssal Echo',
+		'Forge of Titans'
+	  ],
+	};
+  
+	return <TemplatePageEvent {...eventInfo} />;
+  };
+  
+  export default HomePage;

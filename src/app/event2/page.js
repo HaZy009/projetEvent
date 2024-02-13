@@ -1,10 +1,10 @@
-import TemplatePage from "@/components/templatePage/TemplatePage";
+import TemplatePageEvent from "@/components/TemplatePageEvent/TemplatePageEvent";
 import React from "react";
 
 const Event2 = () => {
 	return (
 		<>
-			<TemplatePage title="Page evenement 2" />
+			<TemplatePageEvent title="Page evenement 2" />
 		</>
 	);
 };
