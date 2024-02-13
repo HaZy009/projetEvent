@@ -6,7 +6,15 @@ gap: 1rem;
 }
 
 .active{
-    background-color: var(--bgColor);
+    background-color: white;
+    color: black;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+}
+.notActive{
+  background-color: var(--bgColor);
     color: var(--textColor);
     padding: 5px;
     display: flex;

@@ -10,11 +10,11 @@ const tab = [
         path: '/',
     },
     {
-        title :'Evenement 1',
+        title :'Rocktitude',
         path: '/event1',
     },
     {
-        title :'Evenement 2',
+        title :'Poptastic',
         path: '/event2',
     },
     {
@@ -43,7 +43,7 @@ const Links = () => {
       {
         tab.map((item, index) => (
         <Link 
-        className={ pathname === item.path ? `${Styles.active}` : ''}
+        className={ pathname === item.path ? `${Styles.active}` : `${Styles.notActive}`}
         key={index} href={item.path}>{item.title}</Link>
         ))
       }

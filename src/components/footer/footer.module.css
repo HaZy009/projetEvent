@@ -1,0 +1,12 @@
+.footer {
+    display: flex; /* Establish flex container */
+    justify-content: space-between; /* Align children with space between */
+    align-items: center; /* Align children vertically in the center */
+    padding: 1rem;
+    background-color: var(--bgColor); /* Make sure --bgColor is defined somewhere in your CSS */
+  }
+  
+  .image {
+    width: 125px; /* Set the width of your image */
+    margin-left: auto; /* Push the image to the right */
+  }

@@ -6,8 +6,10 @@ const Navbar =() => {
 
     return(
         <div className={Styles.container}>
-         <div className={Styles.logo}>LOGO</div>   
-        <Links />
+            <div className={Styles.logo}>
+                <img className={Styles.image} src="/festall-logo.PNG" alt="Festall Logo"/>
+            </div>   
+            <Links />
         </div>
     )
 }

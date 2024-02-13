@@ -3,9 +3,12 @@
 
 :root {
 	--bgColor: #363b43;
-	--textColor: black;
+	--textColor: white;
+  --textBgColor: #444951;
 	--autre: rgb(209, 208, 208);
 	--button: #7a5ef6;
+  --bandTextColor: #d730fb;
+  --buttonColor: #9270fc;
 }
 
 body {

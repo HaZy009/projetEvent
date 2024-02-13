@@ -6,7 +6,7 @@
     "bandTitle title void"
     "bandList text image1"
     "button image2 image3";
-  gap: 5px;
+  gap: 10px;
   color: #fff;
   padding: 20px;
   max-width: auto;
@@ -15,13 +15,14 @@
 
 .title {
   grid-area: title;
-  font-size: 35px;
+  font-size: 45px;
   margin-bottom: 10px;
   display: flex;
   font-weight: bold;
   align-items: center;
   justify-content: center;
   text-align: center;
+  color: var(--buttonColor);
 }
 
 .text {
@@ -32,6 +33,9 @@
   align-items: center;
   justify-content: center;
   text-align: center;
+  background-color: var(--textBgColor);
+  border: none;
+  border-radius: 15px;
 }
 
 .bandTitle {
@@ -41,6 +45,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
+  color: var(--bandTextColor);
 }
 
 .bandList {
@@ -50,14 +55,15 @@
   align-items: center;
   justify-content: center;
   text-align: center;
+  color: var(--bandTextColor);
 }
 
 .button {
   grid-area: button;
   justify-self: center;
   padding: 10px 20px;
-  background-color: #6200ee;
-  color: #ffffff;
+  background-color: var(--buttonColor);
+  color: black;
   text-transform: uppercase;
   border: none;
   border-radius: 10px;
