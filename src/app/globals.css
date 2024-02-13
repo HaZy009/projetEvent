@@ -2,7 +2,7 @@
 @tailwind utilities;
 
 :root {
-	--bgColor: white;
+	--bgColor: #363b43;
 	--textColor: black;
 	--autre: rgb(209, 208, 208);
 	--button: #7a5ef6;
