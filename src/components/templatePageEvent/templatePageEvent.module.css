@@ -3,10 +3,10 @@
   grid-template-columns: 0.4fr 1fr 1fr; /* three column layout */
   grid-template-rows: auto auto auto; /* three row layout */
   grid-template-areas:
-    "bandList title title"
+    "bandTitle title void"
     "bandList text image1"
     "button image2 image3";
-  gap: 20px;
+  gap: 5px;
   color: #fff;
   padding: 20px;
   max-width: auto;
@@ -15,17 +15,29 @@
 
 .title {
   grid-area: title;
-  font-size: 30px;
+  font-size: 35px;
   margin-bottom: 10px;
   display: flex;
-  padding-left: 300px;
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .text {
   grid-area: text;
-  font-size: 20px;
+  font-size: 25px;
   margin-bottom: 20px;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.bandTitle {
+  grid-area: bandTitle;
+  font-size: 30px;
+  font-weight: bold;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -35,11 +47,14 @@
   grid-area: bandList;
   font-size: 20px;
   padding-right: 20px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .button {
   grid-area: button;
-  justify-self: start;
+  justify-self: center;
   padding: 10px 20px;
   background-color: #6200ee;
   color: #ffffff;
@@ -50,6 +65,7 @@
   height: fit-content;
   font-size: 15px;
   text-align: center;
+  margin-top: 50%;
 }
 
 .image1 {

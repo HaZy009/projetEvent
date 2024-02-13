@@ -11,8 +11,8 @@ const TemplatePageEvent = ({ title, text, images, bandTitle, bandList }) => {
   
     return (
         <div className={styles.container}>
+          <h2 className={styles.bandTitle}>{bandTitle}</h2>
           <div className={styles.bandList}>
-            <h2>{bandTitle}</h2>
             {bandList.map((band, index) => (
               <p key={index}>{`${index + 1}. ${band}`}</p>
             ))}
