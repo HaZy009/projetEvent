@@ -1,0 +1,96 @@
+.eventPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    /*max-width: 800px;*/
+    width: 100%;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+
+  .divH2 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .divH2 h2 {
+    font-size: 2em;
+    color: #333;
+  }
+  
+  .formulaire {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+.diva {
+  color: black;
+  size: 100px;
+  padding: 1rem;
+}
+
+  .formulaire label {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: #333;
+  }
+  
+  .formulaire input[type="text"],
+  .formulaire input[type="phoneNumber"],
+  .formulaire input[type="email"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .formulaire input[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--buttonColor);
+    color: #fff;
+    cursor: pointer;
+  }
+
+
+@media (max-width: 768px) {
+    .eventPage {
+      padding: 10px;
+    }
+  
+    .divH2 h2 {
+      font-size: 1.5em;
+    }
+  
+    .formulaire {
+      width: 100%;
+    }
+  
+    .diva {
+      font-size: 50px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .eventPage {
+      flex-direction: column;
+    }
+  
+    .formulaire input[type="text"],
+    .formulaire input[type="phoneNumber"],
+    .formulaire input[type="email"],
+    .formulaire input[type="submit"] {
+      width: 100%;
+    }
+  
+    .divH2 h2 {
+      font-size: 1.2em;
+    }
+  
+    .diva {
+      font-size: 40px; 
+    }
+  }

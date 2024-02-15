@@ -18,7 +18,7 @@ const tab = [
         path: '/event2',
     },
     {
-        title :'Contact',
+        title :'Contactez-Nous',
         path: '/contact',
     }
 ];

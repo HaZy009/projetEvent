@@ -1,10 +1,11 @@
 import React from "react";
 import Image from "next/image";
+import styles from "./imageComponent.module.css";
 
-const ImageComponent = ({ srcImg = "/musicFest.jpg", alt = "music" }) => {
+const ImageComponent = ({ srcImg = "/festival-contact1.jpg", alt = "music" }) => {
 	return (
 		<>
-			<Image src={srcImg} alt={alt} fill />
+			<Image className={styles.image} src={srcImg} alt={alt} fill />
 		</>
 	);
 };

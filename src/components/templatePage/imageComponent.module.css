@@ -1,0 +1,17 @@
+.image{
+    border-radius: 10px;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .image {
+      border-radius: 5px; 
+    }
+}
+  
+
+@media (max-width: 480px) {
+    .image {
+      border-radius: 2px; 
+    }
+}

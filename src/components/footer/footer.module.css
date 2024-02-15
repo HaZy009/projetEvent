@@ -1,12 +1,36 @@
 .footer {
-    display: flex; /* Establish flex container */
-    justify-content: space-between; /* Align children with space between */
-    align-items: center; /* Align children vertically in the center */
-    padding: 1rem;
-    background-color: var(--bgColor); /* Make sure --bgColor is defined somewhere in your CSS */
+  display: flex; /* Establish flex container */
+  justify-content: space-between; /* Align children with space between */
+  align-items: center; /* Align children vertically in the center */
+  padding: 1rem;
+  background-color: var(
+    --bgColor
+  ); /* Make sure --bgColor is defined somewhere in your CSS */
+}
+
+.image {
+  width: 125px; /* Set the width of your image */
+  margin-left: auto; /* Push the image to the right */
+}
+
+@media (max-width: 768px) {
+  .footer {
+    justify-content: center;
+    flex-wrap: wrap;
   }
-  
+
   .image {
-    width: 125px; /* Set the width of your image */
-    margin-left: auto; /* Push the image to the right */
+    margin-left: 0;
+    margin-top: 1rem;
   }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    flex-direction: column;
+  }
+
+  .image {
+    margin-top: 1rem;
+  }
+}
