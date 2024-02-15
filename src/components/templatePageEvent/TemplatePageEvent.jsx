@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./templatePageEvent.module.css";
-import ImageComponentEvent from "./ImageComponentEvent";
 
 const TemplatePageEvent = ({ title, text, images, bandTitle, bandList }) => {
     // Ensure images array has exactly three images

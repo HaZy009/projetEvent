@@ -1,5 +1,46 @@
-.containerImage{
-    width: '70%';
-    height: 500px;
-    position: relative;
+.containerImage {
+  width: "70%";
+  height: 500px;
+  position: relative;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.containerCard {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 20px;
+  padding-left: 20rem;
+  padding-right: 20rem;
+}
+.containerDesc {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .containerCard {
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .containerImage {
+    width: 100%;
+    height: auto;
+  }
+
+  .containerCard,
+  .containerDesc {
+    flex-direction: column;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    gap: 10px;
+  }
 }
